@@ -1,0 +1,19 @@
+lib/turtle_tf/fixed_tf_broadcaster.py:35:import tf
+lib/turtle_tf/turtle_tf_listener.py:37:import tf
+lib/turtle_tf/turtle_tf_broadcaster.py:37:import tf
+lib/turtle_tf/turtle_tf_listener_wait.py:37:import tf
+lib/turtle_tf/dynamic_tf_broadcaster.py:35:import tf
+lib/python2.7/dist-packages/tf_conversions/posemath.py:30:import tf
+lib/python2.7/dist-packages/rqt_nav_view/nav_view.py:34:import tf
+lib/rviz_plugin_tutorials/send_test_msgs.py:7:import tf
+lib/tf/view_frames:49:import tf
+lib/turtle_tf2/turtle_tf2_broadcaster.py:38:import tf
+
+___________________________________________________________________________
+command used for this exercise:
+/opt/ros/melodic$ grep -rnw -x 'import tf' > /home/daria/Desktop/4.txt
+
+command used for counting files that contains string 'import tf':
+/opt/ros/melodic$ grep -rnwx 'import tf' | wc -l
+10
+

@@ -1,0 +1,12 @@
+command for largest file:
+/opt/ros/melodic/bin$ ls -lhS | head -2 | awk '{print $5, $9}'
+
+command for smallest file:
+/opt/ros/melodic/bin$ ls -lhS | tail -1 | awk '{print $5, $9}'
+
+_______________________________________________________________
+
+largest file : 307K selftest_rostest
+smallest file : 65 rosconsole
+
+

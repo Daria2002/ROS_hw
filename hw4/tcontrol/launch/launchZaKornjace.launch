@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <node 
+        pkg="turtlesim" 
+        type="turtlesim_node"
+        name="turtlesim_cvor"
+        output="screen">
+    </node>
+
+    <node
+        pkg="tcontrol"
+        type="publisher.py"
+        name="publisher_node"
+        output="screen"
+        args="cmd_vel:=turtle1/cmd_vel">
+    </node>
+
+    <node
+        pkg="rosservice"
+        type="rosservice" 
+        name="stvori" 
+        args="call spawn 2 2 0.2 'turtle2'">
+    </node>
+
+    <node
+        pkg="turtlesim"
+        type="turtle_teleop_key"
+        name="upravljanje_drugom_kornjacom">
+        <remap from="turtle1/cmd_vel" to="turtle2/cmd_vel"/>
+    </node>
+
+    <node
+        pkg="tcontrol"
+        type="detekcijaPozicije.py"
+        name="detekcijaKornjaceUsredini"
+        output="screen"
+        args="pose:=turtle2/pose">
+    </node>
+</launch>
+
+

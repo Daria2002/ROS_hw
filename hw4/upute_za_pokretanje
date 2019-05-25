@@ -1,0 +1,5 @@
+Upute za pokretanje:
+1.upisati naredbu: roslaunch tcontrol launchZaKornjace.launch 
+2.prva kornjaca se automatski pokrece, a druga kornjaca se porece pomocu tipki
+na tipkovnici. 
+3.ako druga kornjaca prođe sredinom ekrana, pojavi se poruka:Turtle in the middle
